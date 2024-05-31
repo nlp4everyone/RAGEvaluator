@@ -3,5 +3,7 @@ system_components/
 __pycache__/
 Python-Developer-SOTATEK.pdf
 .env
-ai_modules/
+chat_modules/
+embedding_modules/
 config/
+synthetic_data/

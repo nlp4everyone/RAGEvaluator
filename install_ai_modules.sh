@@ -1,16 +1,17 @@
 # Update chat model, embedding model
 rm -rf LlamaIndexChatModel
-git clone https://github.com/nlp4everyone/LlamaIndexChatModel.git
+git clone https://github.com/nlp4everyone/GeneralChatEmbeddingModel.git
 
 # Copy file
 rm -rf ai_modules
-cp -rf LlamaIndexChatModel/ai_modules ai_modules
+cp -rf GeneralChatEmbeddingModel/chat_modules chat_modules
+cp -rf GeneralChatEmbeddingModel/embedding_modules embedding_modules
 
-cp -rf LlamaIndexChatModel/config config
+cp -rf GeneralChatEmbeddingModel/config config
 echo "Coping files done!"
 
 # Install packages
-pip install -r LlamaIndexChatModel/requirements.txt
+pip install -r GeneralChatEmbeddingModel/requirements.txt
 
 # Remove folder
-rm -rf LlamaIndexChatModel
+rm -rf GeneralChatEmbeddingModel
